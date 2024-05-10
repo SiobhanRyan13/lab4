@@ -56,4 +56,8 @@ public class Category {
     public int hashCode() {
         return Objects.hash(categoryId, name);
     }
+
+    public int getId() {
+        return 0;
+    }
 }

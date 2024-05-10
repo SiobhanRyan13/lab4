@@ -11,6 +11,7 @@ public class SelectQuestions extends PostgresConnectionHandler {
      * Returns a list of all the films in the db
      * @return a list of all the films.
      */
+
     public List<Film> getAllFilms() {
         return this.dbAdapter.getAllFilms();
     }
@@ -19,9 +20,7 @@ public class SelectQuestions extends PostgresConnectionHandler {
      * Returns al list of all the actors in the db
      * @return a list of all the actors.
      */
-    public List<Actor> getAllActors() {
-        return null;
-    }
+    public List<Actor> getAllActors() {return this.dbAdapter.getAllActors();}
 
     /**
      * A method that uses code to downselect all the actors from getAllActors.
@@ -29,7 +28,7 @@ public class SelectQuestions extends PostgresConnectionHandler {
      * @return A list of actor objects that share a last name.
      */
     public List<Actor> getAllActorsWithLastNameWithCode(String lastName) {
-        return null;
+        return this.dbAdapter.getAllActorsWithLastNameWithCode(lastName);
     }
 
     /**

@@ -131,4 +131,13 @@ public class Film {
     public int hashCode() {
         return Objects.hash(filmId, languageId, originalLanguageId, rentalDuration, length, rentalRate, replacementCost, title, description, releaseYear, rating, specialFeatures);
     }
+
+    public void setlanguageID(int laguageId) {
+    }
+
+    public void setorgionallanguageID(int originalLaguageId) {
+    }
+
+    public void setfilmId(int filmId) {
+    }
 }
